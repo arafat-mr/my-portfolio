@@ -1,36 +1,79 @@
 
+import { useEffect, useState } from 'react';
 import './App.css'
+import Navbar from './Components/Navbar'
+import Banner from './Components/Banner';
+import Social from './Components/Social';
+import AboutMe from './Components/AboutMe';
+import Skills from './Components/Skills';
+import Projects from './Components/Project';
 
 function App() {
-  
+  const [theme, setTheme] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") || "light";
+    }
+    return "light";
+  });
+
+  useEffect(() => {
+    const root = window.document.documentElement;
+    if (theme === "dark") {
+      root.setAttribute("data-theme", "dark");
+    } else {
+      root.setAttribute("data-theme", "light");
+    }
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
 
   return (
-    <>
+    
    
       
-      <div className="min-h-screen w-full bg-[#f8fafc] relative">
-  {/* Bottom Fade Grid Background */}
-  <div
-    className="absolute inset-0 z-0"
-    style={{
-      backgroundImage: `
-        linear-gradient(to right, #e2e8f0 1px, transparent 1px),
-        linear-gradient(to bottom, #e2e8f0 1px, transparent 1px)
-      `,
-      backgroundSize: "20px 30px",
-      WebkitMaskImage:
-        "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
-      maskImage:
-        "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
-    }}
-  />
-     <h1 className='text-primary ' >Vite + React</h1>
-      <p className='text-secondary text-4xl font-bold'>hello</p>
+    <div className='rubik'>
+  <div className="sticky top-0 left-0 z-50 w-full ">
+    <Navbar setTheme={setTheme} />
+  </div>
+
+  <div className="min-h-screen w-full relative rubik pt-15 space-y-4">
+    {/* Background grid */}
+    <div
+      className="absolute inset-0 z-0"
+      style={{
+        backgroundImage: `
+          linear-gradient(to right, ${
+            theme === "dark" ? "#374151" : "#e2e8f0"
+          } 1px, transparent 1px),
+          linear-gradient(to bottom, ${
+            theme === "dark" ? "#374151" : "#e2e8f0"
+          } 1px, transparent 1px)
+        `,
+        backgroundSize: "20px 30px",
+        WebkitMaskImage:
+          "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
+        maskImage:
+          "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
+      }}
+    />
+    {/* Your page content */}
+    <div className='relative z-30'>
+
+    <Banner />
+    
+    </div>
+    
+  <Social />
+  <AboutMe/>
+  <Skills/>
+<Projects/>
+
+   
+  </div>
 </div>
 
 
-
-    </>
+  
   )
 }
 

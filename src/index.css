@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 @import "tailwindcss";
 @plugin "daisyui" {
    themes: light --default, dark --prefersdark;
@@ -9,3 +11,8 @@
   --color-primary: #132238;
   --color-secondary:#556070
  }
+ .rubik {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  
+}
