@@ -1,0 +1,95 @@
+[
+  {
+    "id": 1,
+    "projectName": "Smart Bazar",
+    "mainTechnologyStack": [
+      "React",
+      "Tailwind CSS",
+      "Firebase Authentication",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Stripe",
+      "Recharts"
+    ],
+    "briefDescription": "An online bazar platform where vendors can sell fresh products, users can browse and purchase securely, and admins manage approvals and analytics.",
+    "liveProjectLink": "https://gleaming-alpaca-00df2d.netlify.app/",
+    "githubClientRepo": "https://github.com/arafat-mr/smart-bazar",
+    "challengesFaced": [
+      "Integrating Stripe payment gateway with Firebase authentication.",
+      "Handling role-based access control for vendors, users, and admins.",
+      "Optimizing large datasets for product filtering and search."
+    ],
+    "potentialImprovementsAndFuturePlans": [
+      "Add AI-powered product recommendations.",
+      "Implement multi-language support.",
+      "Introduce a vendor subscription model."
+    ],
+    "images": [
+      "https://i.ibb.co/Fk2QR82X/smart-bazar-1.png",
+      "https://i.ibb.co/n8Vn41SM/smart-baza-4.png",
+      "https://i.ibb.co/MyTfgp3f/smart-bazar-3.png"
+    ]
+  },
+  {
+    "id": 2,
+    "projectName": "Smart Shelf",
+    "mainTechnologyStack": [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "Firebase Authentication",
+      "Express.js",
+      "MongoDB",
+      "Recharts"
+    ],
+    "briefDescription": "A modern bookshelf app allowing users to track, review, and manage their personal book collections with detailed analytics.",
+    "liveProjectLink": "https://heartfelt-selkie-12ab58.netlify.app/",
+    "githubClientRepo": "https://github.com/arafat-mr/smart-shelf-1",
+    "challengesFaced": [
+      "Synchronizing real-time data updates between client and server.",
+      "Managing authentication state across different protected routes.",
+      "Creating responsive charts that adapt to various screen sizes."
+    ],
+    "potentialImprovementsAndFuturePlans": [
+      "Add social sharing and community book clubs.",
+      "Implement offline mode with service workers.",
+      "Integrate with third-party book APIs for richer metadata."
+    ],
+
+    "images": [
+      "https://i.ibb.co/BV7Gm79x/smart-shelf-1.png",
+      "https://i.ibb.co/RWdv5Bj/smart-shel-main.png",
+      "https://i.ibb.co/jvgGB9GQ/smart-shelf-3.png"
+    ]
+  },
+  {
+    "id": 3,
+    "projectName": "Law BD - Lawyer Booking Platform",
+    "mainTechnologyStack": [
+      "React",
+      "Tailwind CSS",
+      "React Router",
+      "Recharts",
+      "Firebase Authentication"
+    ],
+    "briefDescription": "A modern platform that allows clients to search, compare, and book lawyers based on expertise and location. The system features analytics for law firms, client booking history, and an easy-to-navigate interface for both clients and lawyers.",
+    "liveProjectLink": "https://super-phoenix-41b268.netlify.app/",
+    "githubClientRepo": "https://github.com/username/lawbd-client",
+    "challengesFaced": [
+      "Implementing advanced filtering and search to match clients with the most relevant lawyers.",
+      "Designing a secure booking system to prevent double scheduling.",
+      "Integrating analytics dashboards using Recharts for both clients and lawyers."
+    ],
+    "potentialImprovementsAndFuturePlans": [
+      "Add secure online payment and invoicing for legal services.",
+      "Introduce real-time availability and calendar sync for lawyers.",
+      "Implement in-app messaging and document sharing between clients and lawyers."
+    ],
+    "images": [
+      "https://i.ibb.co/v4dQtgDq/lawbd-1.png",
+      "https://i.ibb.co/93mSMfHJ/law-bd2.png",
+      "https://i.ibb.co/DDB85BcN/law-bd-3.png"
+    ]
+  }
+]

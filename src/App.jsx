@@ -7,6 +7,8 @@ import Social from './Components/Social';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
 import Projects from './Components/Project';
+import { Outlet } from 'react-router';
+import Footer from './Components/Footer';
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -31,7 +33,7 @@ function App() {
     
    
       
-    <div className='rubik'>
+    <div className='rubik' >
   <div className="sticky top-0 left-0 z-50 w-full ">
     <Navbar setTheme={setTheme} />
   </div>
@@ -56,20 +58,11 @@ function App() {
           "radial-gradient(ellipse 70% 60% at 50% 100%, #000 60%, transparent 100%)",
       }}
     />
-    {/* Your page content */}
-    <div className='relative z-30'>
-
-    <Banner />
     
-    </div>
-    
-  <Social />
-  <AboutMe/>
-  <Skills/>
-<Projects/>
 
-   
+   <Outlet/>
   </div>
+  <Footer/>
 </div>
 
 

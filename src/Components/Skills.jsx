@@ -154,7 +154,7 @@ const sectionBorder = `border-4 border-transparent rounded-2xl
 
 export default function SkillsSection() {
   return (
-    <section className="max-w-10/12 relative z-10 mx-auto px-4 py-8 space-y-10 select-none overflow-x-hidden">
+    <section id="skills" className="max-w-10/12 relative z-10 mx-auto px-4 py-8 space-y-10 select-none overflow-x-hidden ">
       <h2
         className="
           text-3xl md:text-4xl font-extrabold text-center

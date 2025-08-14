@@ -28,20 +28,22 @@ const projects = [
   },
   {
     id: 3,
-    title: "Find Fest",
-    description: "A modern event management and booking platform.",
+    title: "Law BD",
+    description: "A modern lawyer booking platform.",
     images: [
-      "https://i.ibb.co/7tX2Rgw3/event-1.png",
-      "https://i.ibb.co/8HZknNL/event-2.png",
-      "https://i.ibb.co/psv8QzS/event-3.png",
+      "https://i.ibb.co/v4dQtgDq/lawbd-1.png",
+      "https://i.ibb.co/93mSMfHJ/law-bd2.png",
+      "https://i.ibb.co/DDB85BcN/law-bd-3.png",
     ],
-    liveLink: "https://super-phoenix-41b268.netlify.app/",
+    liveLink: "https://velvety-cat-6be241.netlify.app/",
   },
 ];
 
+
+
 export default function Projects() {
   return (
-    <section className="py-16 rounded-lg relative z-10 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white">
+    <section id="projects" className="py-16 rounded-lg relative z-10 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white ">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-4xl bg-gradient-to-r from-indigo-200 via-pink-700 to-purple-300
             bg-clip-text text-transparent font-bold mb-8 text-center">Projects</h2>
@@ -67,8 +69,12 @@ function ProjectCard({ project }) {
     return () => clearInterval(interval);
   }, [project.images.length]);
 
+
+    
+       
+        
   return (
-    <div className="bg-white/10 backdrop-blur-xl rounded-xl border border-white/20 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 ">
+    <div  className="bg-white/10 backdrop-blur-xl rounded-xl border border-white/20 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 ">
       {/* Rotating Images */}
       <div className="relative w-full h-56 overflow-hidden rounded-t-xl ">
         <AnimatePresence mode="wait">
@@ -76,7 +82,7 @@ function ProjectCard({ project }) {
             key={project.images[currentImage]}
             src={project.images[currentImage]}
             alt={project.title}
-            className="absolute inset-0 w-full h-full object-cover p-3 rounded-2xl "
+            className="absolute inset-0 w-full h-full object-cover object-center   "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}

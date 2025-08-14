@@ -2,11 +2,11 @@ import { FaGithub, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { SiGmail } from "react-icons/si"; 
 export default function Social() {
   return (
-    <div className="max-w-11/12 mx-auto flex flex-col items-center space-y-6">
+    <div id="social" className="max-w-11/12 mx-auto flex flex-col items-center space-y-6">
       {/* Heading */}
       <h2
         className="
-          text-3xl font-bold z-50
+          text-3xl font-bold z-10
           bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500
           bg-clip-text text-transparent
           text-center
@@ -17,7 +17,7 @@ export default function Social() {
       </h2>
 
       {/* Social Icons */}
-      <div className="flex justify-center items-center space-x-5 md:space-x-18"> {/* 3x gap */}
+      <div className="flex justify-center items-center space-x-5 md:space-x-18"> 
         {/* GitHub */}
         <a
           href="https://github.com/arafat-mr"
