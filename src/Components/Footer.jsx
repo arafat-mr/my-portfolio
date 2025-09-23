@@ -5,7 +5,7 @@ import { FaArrowLeft, FaFacebookF, FaGithub, FaLinkedinIn } from 'react-icons/fa
 const Footer = () => {
 
     return (
-        <div className='w-full'>
+        <div className='w-full mx-auto px-2'>
             <footer className="footer footer-horizontal footer-center  rounded p-10 ">
   <nav className="grid grid-flow-col gap-4">
     Connect with me

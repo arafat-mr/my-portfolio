@@ -2,13 +2,10 @@
 import { useEffect, useState } from 'react';
 import './App.css'
 import Navbar from './Components/Navbar'
-import Banner from './Components/Banner';
-import Social from './Components/Social';
-import AboutMe from './Components/AboutMe';
-import Skills from './Components/Skills';
-import Projects from './Components/Project';
+
 import { Outlet } from 'react-router';
 import Footer from './Components/Footer';
+import ChatBot from './Components/ChatBot';
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -34,7 +31,7 @@ function App() {
    
       
     <div className='rubik' >
-  <div className="sticky top-0 left-0 z-50 w-full ">
+  <div className="sticky top-0 left-0 z-50 w-full  ">
     <Navbar setTheme={setTheme} />
   </div>
 
@@ -63,6 +60,7 @@ function App() {
    <Outlet/>
   </div>
   <Footer/>
+  <ChatBot/>
 </div>
 
 

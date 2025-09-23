@@ -9,7 +9,7 @@ import ContactSection from "../ContactSection";
 const Home = () => {
   return (
     <div>
-      <div className="relative z-30">
+      <div className="relative z-30 ">
         <Banner />
       </div>
 

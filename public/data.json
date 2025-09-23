@@ -26,9 +26,9 @@
       "Introduce a vendor subscription model."
     ],
     "images": [
-      "https://i.ibb.co/Fk2QR82X/smart-bazar-1.png",
-      "https://i.ibb.co/n8Vn41SM/smart-baza-4.png",
-      "https://i.ibb.co/MyTfgp3f/smart-bazar-3.png"
+      "https://i.ibb.co/zV6GkXFr/smart-bazar-new-1.png",
+      "https://i.ibb.co/bRYjPGFC/smart-bazar-new-2.png",
+      "https://i.ibb.co/CKYsPJtm/smart-bazar-new-5.png"
     ]
   },
   {
@@ -63,33 +63,37 @@
       "https://i.ibb.co/jvgGB9GQ/smart-shelf-3.png"
     ]
   },
-  {
-    "id": 3,
-    "projectName": "Law BD - Lawyer Booking Platform",
-    "mainTechnologyStack": [
-      "React",
-      "Tailwind CSS",
-      "React Router",
-      "Recharts",
-      "Firebase Authentication"
-    ],
-    "briefDescription": "A modern platform that allows clients to search, compare, and book lawyers based on expertise and location. The system features analytics for law firms, client booking history, and an easy-to-navigate interface for both clients and lawyers.",
-    "liveProjectLink": "https://super-phoenix-41b268.netlify.app/",
-    "githubClientRepo": "https://github.com/username/lawbd-client",
-    "challengesFaced": [
-      "Implementing advanced filtering and search to match clients with the most relevant lawyers.",
-      "Designing a secure booking system to prevent double scheduling.",
-      "Integrating analytics dashboards using Recharts for both clients and lawyers."
-    ],
-    "potentialImprovementsAndFuturePlans": [
-      "Add secure online payment and invoicing for legal services.",
-      "Introduce real-time availability and calendar sync for lawyers.",
-      "Implement in-app messaging and document sharing between clients and lawyers."
-    ],
-    "images": [
-      "https://i.ibb.co/v4dQtgDq/lawbd-1.png",
-      "https://i.ibb.co/93mSMfHJ/law-bd2.png",
-      "https://i.ibb.co/DDB85BcN/law-bd-3.png"
-    ]
-  }
+ {
+  "id": 3,
+  "projectName": "Eduverse - E-Learning Platform",
+  "mainTechnologyStack": [
+    "Next.js",
+    "React",
+    "Tailwind CSS",
+    "Recharts",
+    "NextAuth",
+    "MongoDB",
+    "Express.js",
+    "Stripe"
+  ],
+  "briefDescription": "Eduverse is a modern e-learning platform where learners can explore courses, take quizzes, and earn admin-approved certificates. Admins can manage users, courses, revenue, and certificate approvals through a clean, interactive dashboard.",
+  "liveProjectLink": "https://eduverse-one-gamma.vercel.app/",
+  "githubClientRepo": "https://github.com/arafat-mr/Eduverse",
+  "challengesFaced": [
+    "Implementing dynamic certificate generation with admin approval flow.",
+    "Building a secure authentication system using Firebase.",
+    "Integrating analytics and dashboards for both users and admins."
+  ],
+  "potentialImprovementsAndFuturePlans": [
+    "Add real-time notifications for course updates and certificate approvals.",
+    "Implement multi-language support for international learners.",
+    "Enhance analytics with detailed charts and reports for admins."
+  ],
+  "images": [
+    "https://i.ibb.co/fVmvnHg8/Eduverse-1.png",
+    "https://i.ibb.co/Z6h8JmD7/Eduverse-4.png",
+    "https://i.ibb.co/CpfFsYTy/Eduverse-3.png"
+  ]
+}
+
 ]

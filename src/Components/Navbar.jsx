@@ -88,7 +88,7 @@ const Navbar = ({ setTheme }) => {
 
         {/* Navbar */}
         <div className="drawer-content">
-          <div className="navbar max-w-full mx-auto backdrop-blur-xl shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] px-5 h-10 bg-transparent">
+          <div className="navbar max-w-full  backdrop-blur-xl shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)] px-5 h-10 bg-transparent">
             {/* Left side */}
             <div className="navbar-start">
               <label

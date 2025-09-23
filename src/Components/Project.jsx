@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaExternalLinkAlt, FaInfoCircle } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import { div } from "framer-motion/client";
 
 const projects = [
   {
@@ -9,11 +10,22 @@ const projects = [
     title: "Smart Bazar",
     description: "An online bazar platform for fresh produce.",
     images: [
-      "https://i.ibb.co/Fk2QR82X/smart-bazar-1.png",
-      "https://i.ibb.co/n8Vn41SM/smart-baza-4.png",
-      "https://i.ibb.co/MyTfgp3f/smart-bazar-3.png",
+      "https://i.ibb.co/zV6GkXFr/smart-bazar-new-1.png",
+      "https://i.ibb.co/bRYjPGFC/smart-bazar-new-2.png",
+      "https://i.ibb.co/CKYsPJtm/smart-bazar-new-5.png",
     ],
     liveLink: "https://gleaming-alpaca-00df2d.netlify.app/",
+  },
+  {
+    id: 3,
+    title: "Eduverse",
+    description: "A modern e-learning platform for courses.",
+    images: [
+      "https://i.ibb.co/fVmvnHg8/Eduverse-1.png",
+      "https://i.ibb.co/Z6h8JmD7/Eduverse-4.png",
+      "https://i.ibb.co/CpfFsYTy/Eduverse-3.png",
+    ],
+    liveLink: "https://eduverse-one-gamma.vercel.app/",
   },
   {
     id: 2,
@@ -26,42 +38,38 @@ const projects = [
     ],
     liveLink: "https://heartfelt-selkie-12ab58.netlify.app/",
   },
-  {
-    id: 3,
-    title: "Law BD",
-    description: "A modern lawyer booking platform.",
-    images: [
-      "https://i.ibb.co/v4dQtgDq/lawbd-1.png",
-      "https://i.ibb.co/93mSMfHJ/law-bd2.png",
-      "https://i.ibb.co/DDB85BcN/law-bd-3.png",
-    ],
-    liveLink: "https://velvety-cat-6be241.netlify.app/",
-  },
 ];
-
-
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-16 rounded-lg relative z-10 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white ">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl bg-gradient-to-r from-indigo-200 via-pink-700 to-purple-300
-            bg-clip-text text-transparent font-bold mb-8 text-center">Projects</h2>
+    <div className="px-3">
+      <section
+        id="projects"
+        className="py-16  rounded-lg relative z-10 bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white "
+      >
+        <div className="max-w-6xl mx-auto px-4">
+          <h2
+            className="text-4xl bg-gradient-to-r from-indigo-200 via-pink-700 to-purple-300
+            bg-clip-text text-transparent font-bold mb-8 text-center"
+          >
+            Projects
+          </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {projects.map((project) => (
+              <ProjectCard key={project.id} project={project} />
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 }
 
 function ProjectCard({ project }) {
   const [currentImage, setCurrentImage] = useState(0);
 
-//    imgs 
+  //    imgs
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % project.images.length);
@@ -69,12 +77,8 @@ function ProjectCard({ project }) {
     return () => clearInterval(interval);
   }, [project.images.length]);
 
-
-    
-       
-        
   return (
-    <div  className="bg-white/10 backdrop-blur-xl rounded-xl border border-white/20 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 ">
+    <div className="bg-white/10 backdrop-blur-xl rounded-xl border border-white/20 shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1 ">
       {/* Rotating Images */}
       <div className="relative w-full h-56 overflow-hidden rounded-t-xl ">
         <AnimatePresence mode="wait">
@@ -102,14 +106,14 @@ function ProjectCard({ project }) {
             href={project.liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-red-500 text-white px-4 py-2 rounded-lg shadow-lg hover:shadow-pink-500/50 transition"
+            className="flex items-center gap-2 bg-gradient-to-r from-pink-500 to-red-500 text-white px-3 sm:px-4 py-2 rounded-lg shadow-lg hover:shadow-pink-500/50 transition whitespace-nowrap text-sm sm:text-base"
           >
             <FaExternalLinkAlt /> View Live
           </a>
 
           <Link
             to={`/projects/${project.id}`}
-            className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-4 py-2 rounded-lg shadow-lg hover:shadow-blue-500/50 transition"
+            className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-indigo-500 text-white px-3 sm:px-4 py-2 rounded-lg shadow-lg hover:shadow-blue-500/50 transition whitespace-nowrap text-sm sm:text-base"
           >
             <FaInfoCircle /> View Details
           </Link>

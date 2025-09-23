@@ -43,7 +43,7 @@ const Banner = () => {
 
   return (
     <div id="banner" >
-      <section  className="max-w-10/12  mx-auto px-6 md:px-6 py-4 flex flex-col md:flex-row items-center md:items-start gap-10">
+      <section  className="max-w-10/12  mx-auto px-6 md:px-6 py-4 flex flex-col-reverse md:flex-row items-center md:items-start gap-10">
         {/* Left side - Info */}
         <div className="flex-1 text-center md:text-left">
           <GlowingText
@@ -76,11 +76,13 @@ const Banner = () => {
           </p>
 
           <GLowing color="electricPink" className="mb-6" >
-            <a href="#">Download Resume</a>
+             <a href="/myResume.pdf" download="Yeasin_Arafat_Resume.pdf">
+    Download Resume
+  </a>
           </GLowing>
 
           {/* Tech Icons below button */}
-          <div className="flex justify-center md:justify-start space-x-10 text-5xl px-4 py-2">
+          <div className="flex justify-center md:justify-start space-x-10 text-4xl px-4 py-2">
             <FaJsSquare className={glowStyles.js} title="JavaScript" />
             <FaReact className={glowStyles.react} title="React" />
             <FaNodeJs className={glowStyles.node} title="Node.js" />
@@ -90,13 +92,13 @@ const Banner = () => {
 
         
         {/* Right side - Photo */}
-        <div className="flex-1 p-2 flex justify-center md:justify-end relative w-96 h-96">
+        <div className="flex-1 p-2 flex justify-center md:justify-end relative lg:w-96 lg:h-96">
           {/* Rotating border ring */}
           <div
             className="
       absolute 
       
-      rounded-full w-54 h-54 md:w-57 md:h-57 
+      rounded-full w-56 h-56 md:w-57 md:h-57 
       lg:w-84 lg:h-84 
       bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500
       animate-spin
@@ -111,14 +113,16 @@ const Banner = () => {
             src="./my-img.jpg"
             alt="Md Yeasin Arafat"
             className="
-      relative rounded-full object-cover w-53 h-53 md:w-56 md:h-56  lg:w-83 lg:h-83   lg:p-0.5
+      relative rounded-full object-cover w-55 h-55 md:w-56 md:h-56  lg:w-83 lg:h-83   lg:p-0.5
    
       
       z-20
     "
           />
         </div>
+        
       </section>
+      
     </div>
   );
 };
